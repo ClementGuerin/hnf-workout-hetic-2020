@@ -2,13 +2,6 @@
   z-index: 1;
   position: relative;
   height: 100vh;
-  padding-top: 92px;
-  .--col-no-gutter {
-    padding: 0;
-    @include for-size(tablet-portrait-up) {
-      padding: inherit;
-    }
-  }
   &::after {
     content: '';
     position: absolute;
@@ -21,10 +14,18 @@
     background-size: cover;
     height: 100%;
   }
+  &-top {
+    height: 60vh;
+  }
+  &-bottom {
+    height: 40vh;
+    background: #fff;
+  }
   &-title {
     font-size: 26px;
     color: #fff;
     line-height: 1.6;
+    padding: 120px 32px 0;
   }
   &-highlight {
     color: #67E9D7;
@@ -32,5 +33,31 @@
   &-flow {
     background: #fff;
     padding: 40px 50px;
+  }
+  &-flowTitle {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+  &-label {
+    display: block;
+    font-size: 16px;
+    color: #BEBEBE;
+    margin-bottom: 14px;
+  }
+  &-flowInput {
+    font-size: 16px;
+    color: #BBB;
+    font-weight: 300;
+    border: none;
+    border-bottom: 1px solid #BEBEBE;
+    padding-bottom: 8px;
+    width: 100%;
+    margin-bottom: 32px;
+    outline: none;
+  }
+  &-flowBtn {
+    @include generic-button;
   }
 }
