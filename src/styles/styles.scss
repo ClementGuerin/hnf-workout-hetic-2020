@@ -4,7 +4,26 @@
 
 // mixins
 @import './mixins/forsize';
-
 // components
 @import './components/header';
 @import './components/heropanel';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-size: 16px;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}

@@ -2,6 +2,13 @@
   z-index: 1;
   position: relative;
   height: 100vh;
+  padding-top: 92px;
+  .--col-no-gutter {
+    padding: 0;
+    @include for-size(tablet-portrait-up) {
+      padding: inherit;
+    }
+  }
   &::after {
     content: '';
     position: absolute;
@@ -13,5 +20,17 @@
     background: url('../img/hero-small.jpg') no-repeat top center;
     background-size: cover;
     height: 100%;
+  }
+  &-title {
+    font-size: 26px;
+    color: #fff;
+    line-height: 1.6;
+  }
+  &-highlight {
+    color: #67E9D7;
+  }
+  &-flow {
+    background: #fff;
+    padding: 40px 50px;
   }
 }
