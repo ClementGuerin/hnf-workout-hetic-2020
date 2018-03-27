@@ -1,0 +1,44 @@
+.How-it-works {
+    padding: 80px 0;
+    @include for-size(phone-only) {
+        padding: 50px 20px;
+    }
+    &-heading {
+        padding-bottom: 40px;
+        align-self: center;
+        @include for-size(phone-only) {
+            padding-bottom: 20px;
+        }
+    }
+    &-title {
+        color: $mainColor;
+        margin-bottom: 25px;
+        font-size: 18px;
+        font-weight: bold;
+        @include for-size(phone-only) {
+            margin-bottom: 10px;
+        }
+    }
+    &-paragraph {
+        font-size: 15px;
+    }
+    &-items {
+        &-flex {
+            display: flex;
+            margin: 30px 0px;
+            &-text{
+                font-size: 14px;
+            }
+            &-img {
+                margin-right: 20px;
+                vertical-align: text-top;
+                object-fit: contain;
+                max-width: 18px;
+            }
+        }
+        &-blue {
+            color: $mainColor;
+            font-weight: bold;
+        }
+    }
+}
