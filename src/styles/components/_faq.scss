@@ -1,0 +1,23 @@
+.faq{
+    padding: 20px 0;
+    &-title{
+        font-size: 20px;
+        padding: 80px 0;
+        text-align: center;
+        color: #4d7fd5;
+        font-weight: bold;
+    }
+    &-item{
+        position: relative;
+        cursor: pointer;
+        padding: 1.5rem 2rem;
+        border-radius: .4rem;
+        border: 1px solid #eaeaea;
+        margin: 1rem 0;
+    }
+    &-infos{
+        text-align: center;
+        line-height: 34px;
+        font-size: 14px;
+    }
+}
